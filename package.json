@@ -1,0 +1,25 @@
+{
+  "name": "retry-until",
+  "version": "0.0.0",
+  "files": [],
+  "description": "Just a way to keep calling a function as long as it's throwing, for some period of time.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacs/retry-until"
+  },
+  "author": "Isaac Z. Schlueter <i@izs.me> (https://izs.me)",
+  "license": "ISC",
+  "scripts": {
+    "test": "tap",
+    "snap": "tap",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags"
+  },
+  "tap": {
+    "check-coverage": true
+  },
+  "devDependencies": {
+    "tap": "^14.11.0"
+  }
+}
